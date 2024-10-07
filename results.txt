@@ -1,0 +1,179 @@
+First pattern
+
+Process 1 (28075) beginning
+Process 2 (28076) beginning
+Process 3 (28077) beginning
+Process 4 (28078) beginning
+Process 5 (28079) beginning
+Process 6 (28080) beginning
+Process 7 (28081) beginning
+Process 8 (28082) beginning
+Process 9 (28083) beginning
+Process 10 (28084) beginning
+Process 2 (28076) exiting after sleeping for 3 second(s), the parent is 28074
+Process 3 (28077) exiting after sleeping for 3 second(s), the parent is 28074
+Process 1 (28075) exiting after sleeping for 4 second(s), the parent is 28074
+Process 7 (28081) exiting after sleeping for 4 second(s), the parent is 28074
+Process 4 (28078) exiting after sleeping for 5 second(s), the parent is 28074
+Process 6 (28080) exiting after sleeping for 5 second(s), the parent is 28074
+Process 10 (28084) exiting after sleeping for 7 second(s), the parent is 28074
+Process 5 (28079) exiting after sleeping for 8 second(s), the parent is 28074
+Process 8 (28082) exiting after sleeping for 8 second(s), the parent is 28074
+Process 9 (28083) exiting after sleeping for 8 second(s), the parent is 28074
+
+Process 1 (28093) beginning
+Process 2 (28094) beginning
+Process 3 (28095) beginning
+Process 4 (28096) beginning
+Process 5 (28097) beginning
+Process 6 (28098) beginning
+Process 7 (28099) beginning
+Process 8 (28100) beginning
+Process 9 (28101) beginning
+Process 10 (28102) beginning
+Process 11 (28103) beginning
+Process 12 (28104) beginning
+Process 13 (28105) beginning
+Process 14 (28106) beginning
+Process 15 (28107) beginning
+Process 16 (28108) beginning
+Process 17 (28109) beginning
+Process 18 (28110) beginning
+Process 19 (28111) beginning
+Process 20 (28112) beginning
+Process 9 (28101) exiting after sleeping for 1 second(s), the parent is 28092
+Process 11 (28103) exiting after sleeping for 1 second(s), the parent is 28092
+Process 13 (28105) exiting after sleeping for 1 second(s), the parent is 28092
+Process 1 (28093) exiting after sleeping for 3 second(s), the parent is 28092
+Process 12 (28104) exiting after sleeping for 3 second(s), the parent is 28092
+Process 10 (28102) exiting after sleeping for 3 second(s), the parent is 28092
+Process 20 (28112) exiting after sleeping for 3 second(s), the parent is 28092
+Process 5 (28097) exiting after sleeping for 4 second(s), the parent is 28092
+Process 6 (28098) exiting after sleeping for 4 second(s), the parent is 28092
+Process 3 (28095) exiting after sleeping for 5 second(s), the parent is 28092
+Process 8 (28100) exiting after sleeping for 5 second(s), the parent is 28092
+Process 17 (28109) exiting after sleeping for 5 second(s), the parent is 28092
+Process 18 (28110) exiting after sleeping for 5 second(s), the parent is 28092
+Process 4 (28096) exiting after sleeping for 6 second(s), the parent is 28092
+Process 7 (28099) exiting after sleeping for 6 second(s), the parent is 28092
+Process 14 (28106) exiting after sleeping for 6 second(s), the parent is 28092
+Process 19 (28111) exiting after sleeping for 6 second(s), the parent is 28092
+Process 15 (28107) exiting after sleeping for 7 second(s), the parent is 28092
+Process 2 (28094) exiting after sleeping for 8 second(s), the parent is 28092
+Process 16 (28108) exiting after sleeping for 8 second(s), the parent is 28092
+
+Second pattern
+
+Process 1 (28120) beginning
+Process 1 creating Process 2
+Process 1 exiting
+Process 1 (28120) started Process 2 (28121)
+Process 2 (28121) beginning
+Process 2 creating Process 3
+Process 2 exiting
+Process 2 (28121) started Process 3 (28122)
+Process 3 (28122) beginning
+Process 3 creating Process 4
+Process 3 exiting
+Process 3 (28122) started Process 4 (28124)
+Process 4 (28124) beginning
+Process 4 creating Process 5
+Process 4 exiting
+Process 4 (28124) started Process 5 (28125)
+Process 5 (28125) beginning
+Process 5 creating Process 6
+Process 5 exiting
+Process 5 (28125) started Process 6 (28127)
+Process 6 (28127) beginning
+Process 6 creating Process 7
+Process 6 exiting
+Process 6 (28127) started Process 7 (28129)
+Process 7 (28129) beginning
+Process 7 creating Process 8
+Process 7 exiting
+Process 7 (28129) started Process 8 (28131)
+Process 8 (28131) beginning
+Process 8 creating Process 9
+Process 8 exiting
+Process 8 (28131) started Process 9 (28132)
+Process 9 (28132) beginning
+Process 9 creating Process 10
+Process 9 exiting
+Process 9 (28132) started Process 10 (28134)
+
+Process 1 (28139) beginning
+Process 1 creating Process 2
+Process 1 exiting
+Process 1 (28139) started Process 2 (28140)
+Process 2 (28140) beginning
+Process 2 creating Process 3
+Process 2 exiting
+Process 2 (28140) started Process 3 (28141)
+Process 3 (28141) beginning
+Process 3 creating Process 4
+Process 3 exiting
+Process 3 (28141) started Process 4 (28143)
+Process 4 (28143) beginning
+Process 4 creating Process 5
+Process 4 exiting
+Process 4 (28143) started Process 5 (28145)
+Process 5 (28145) beginning
+Process 5 creating Process 6
+Process 5 exiting
+Process 5 (28145) started Process 6 (28146)
+Process 6 (28146) beginning
+Process 6 creating Process 7
+Process 6 exiting
+Process 6 (28146) started Process 7 (28149)
+Process 7 (28149) beginning
+Process 7 creating Process 8
+Process 7 exiting
+Process 7 (28149) started Process 8 (28151)
+Process 8 (28151) beginning
+Process 8 creating Process 9
+Process 8 exiting
+Process 8 (28151) started Process 9 (28152)
+Process 9 (28152) beginning
+Process 9 creating Process 10
+Process 9 exiting
+Process 9 (28152) started Process 10 (28155)
+Process 10 (28155) beginning
+Process 10 creating Process 11
+Process 10 exiting
+Process 10 (28155) started Process 11 (28156)
+Process 11 (28156) beginning
+Process 11 creating Process 12
+Process 11 exiting
+Process 11 (28156) started Process 12 (28157)
+Process 12 (28157) beginning
+Process 12 creating Process 13
+Process 12 exiting
+Process 12 (28157) started Process 13 (28159)
+Process 13 (28159) beginning
+Process 13 creating Process 14
+Process 13 exiting
+Process 13 (28159) started Process 14 (28160)
+Process 14 (28160) beginning
+Process 14 creating Process 15
+Process 14 exiting
+Process 14 (28160) started Process 15 (28162)
+Process 15 (28162) beginning
+Process 15 creating Process 16
+Process 15 exiting
+Process 15 (28162) started Process 16 (28163)
+Process 16 (28163) beginning
+Process 16 creating Process 17
+Process 16 exiting
+Process 16 (28163) started Process 17 (28164)
+Process 17 (28164) beginning
+Process 17 creating Process 18
+Process 17 exiting
+Process 17 (28164) started Process 18 (28166)
+Process 18 (28166) beginning
+Process 18 creating Process 19
+Process 18 exiting
+Process 18 (28166) started Process 19 (28167)
+Process 19 (28167) beginning
+Process 19 creating Process 20
+Process 19 exiting
+Process 19 (28167) started Process 20 (28169)
