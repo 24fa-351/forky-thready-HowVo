@@ -40,14 +40,17 @@ int main(int argc, char **argv)
 
    else if (patternNum == 2)
    {
+      int sleepTime;
+
       for (unsigned int i = 1; i <= numOfProcess - 1; i++)
       {
          childPid = fork();
-         int sleepTime = rand() % 8 + 1;
+         sleepTime = rand() % 8 + 1;
 
          if (childPid < 0)
          {
             perror("Fork failed");
+            exit(1);
          }
 
          else if (childPid > 0) // in parent process
@@ -55,15 +58,20 @@ int main(int argc, char **argv)
             printf("Process %d (%d) beginning\n", i, getpid());
             printf("Process %d creating Process %d\n", i, i + 1);
             wait(NULL);
-            exit(0);
+            printf("Process %d (%d) exiting after sleeping for %d second(s), the parent is %d\n", i, getpid(), sleepTime, getppid());
+            break;
          }
 
          else // in child process
          {
             sleep(sleepTime);
-            printf("Process %d exiting\n", i);
             printf("Process %d (%d) started Process %d (%d)\n", i, getppid(), i + 1, getpid());
          }
+      }
+      
+      if (childPid == 0)
+      {
+         printf("Process %d (%d) exiting after sleeping for %d second(s), the parent is %d\n", numOfProcess, getpid(), sleepTime, getppid());
       }
    }
    return 0;

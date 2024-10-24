@@ -64,116 +64,118 @@ Process 16 (28108) exiting after sleeping for 8 second(s), the parent is 28092
 
 Second pattern
 
-Process 1 (28120) beginning
+Process 1 (71091) beginning
 Process 1 creating Process 2
-Process 1 exiting
-Process 1 (28120) started Process 2 (28121)
-Process 2 (28121) beginning
+Process 1 (71091) started Process 2 (71092)
+Process 2 (71092) beginning
 Process 2 creating Process 3
-Process 2 exiting
-Process 2 (28121) started Process 3 (28122)
-Process 3 (28122) beginning
+Process 2 (71092) started Process 3 (71093)
+Process 3 (71093) beginning
 Process 3 creating Process 4
-Process 3 exiting
-Process 3 (28122) started Process 4 (28124)
-Process 4 (28124) beginning
+Process 3 (71093) started Process 4 (71094)
+Process 4 (71094) beginning
 Process 4 creating Process 5
-Process 4 exiting
-Process 4 (28124) started Process 5 (28125)
-Process 5 (28125) beginning
+Process 4 (71094) started Process 5 (71095)
+Process 5 (71095) beginning
 Process 5 creating Process 6
-Process 5 exiting
-Process 5 (28125) started Process 6 (28127)
-Process 6 (28127) beginning
+Process 5 (71095) started Process 6 (71098)
+Process 6 (71098) beginning
 Process 6 creating Process 7
-Process 6 exiting
-Process 6 (28127) started Process 7 (28129)
-Process 7 (28129) beginning
+Process 6 (71098) started Process 7 (71099)
+Process 7 (71099) beginning
 Process 7 creating Process 8
-Process 7 exiting
-Process 7 (28129) started Process 8 (28131)
-Process 8 (28131) beginning
+Process 7 (71099) started Process 8 (71105)
+Process 8 (71105) beginning
 Process 8 creating Process 9
-Process 8 exiting
-Process 8 (28131) started Process 9 (28132)
-Process 9 (28132) beginning
+Process 8 (71105) started Process 9 (71106)
+Process 9 (71106) beginning
 Process 9 creating Process 10
-Process 9 exiting
-Process 9 (28132) started Process 10 (28134)
+Process 9 (71106) started Process 10 (71108)
+Process 10 (71108) exiting after sleeping for 8 second(s), the parent is 71106
+Process 9 (71106) exiting after sleeping for 8 second(s), the parent is 71105
+Process 8 (71105) exiting after sleeping for 4 second(s), the parent is 71099
+Process 7 (71099) exiting after sleeping for 7 second(s), the parent is 71098
+Process 6 (71098) exiting after sleeping for 7 second(s), the parent is 71095
+Process 5 (71095) exiting after sleeping for 1 second(s), the parent is 71094
+Process 4 (71094) exiting after sleeping for 3 second(s), the parent is 71093
+Process 3 (71093) exiting after sleeping for 1 second(s), the parent is 71092
+Process 2 (71092) exiting after sleeping for 1 second(s), the parent is 71091
+Process 1 (71091) exiting after sleeping for 5 second(s), the parent is 70500
 
-Process 1 (28139) beginning
+Process 1 (71160) beginning
 Process 1 creating Process 2
-Process 1 exiting
-Process 1 (28139) started Process 2 (28140)
-Process 2 (28140) beginning
+Process 1 (71160) started Process 2 (71161)
+Process 2 (71161) beginning
 Process 2 creating Process 3
-Process 2 exiting
-Process 2 (28140) started Process 3 (28141)
-Process 3 (28141) beginning
+Process 2 (71161) started Process 3 (71162)
+Process 3 (71162) beginning
 Process 3 creating Process 4
-Process 3 exiting
-Process 3 (28141) started Process 4 (28143)
-Process 4 (28143) beginning
+Process 3 (71162) started Process 4 (71164)
+Process 4 (71164) beginning
 Process 4 creating Process 5
-Process 4 exiting
-Process 4 (28143) started Process 5 (28145)
-Process 5 (28145) beginning
+Process 4 (71164) started Process 5 (71175)
+Process 5 (71175) beginning
 Process 5 creating Process 6
-Process 5 exiting
-Process 5 (28145) started Process 6 (28146)
-Process 6 (28146) beginning
+Process 5 (71175) started Process 6 (71177)
+Process 6 (71177) beginning
 Process 6 creating Process 7
-Process 6 exiting
-Process 6 (28146) started Process 7 (28149)
-Process 7 (28149) beginning
+Process 6 (71177) started Process 7 (71178)
+Process 7 (71178) beginning
 Process 7 creating Process 8
-Process 7 exiting
-Process 7 (28149) started Process 8 (28151)
-Process 8 (28151) beginning
+Process 7 (71178) started Process 8 (71179)
+Process 8 (71179) beginning
 Process 8 creating Process 9
-Process 8 exiting
-Process 8 (28151) started Process 9 (28152)
-Process 9 (28152) beginning
+Process 8 (71179) started Process 9 (71181)
+Process 9 (71181) beginning
 Process 9 creating Process 10
-Process 9 exiting
-Process 9 (28152) started Process 10 (28155)
-Process 10 (28155) beginning
+Process 9 (71181) started Process 10 (71182)
+Process 10 (71182) beginning
 Process 10 creating Process 11
-Process 10 exiting
-Process 10 (28155) started Process 11 (28156)
-Process 11 (28156) beginning
+Process 10 (71182) started Process 11 (71184)
+Process 11 (71184) beginning
 Process 11 creating Process 12
-Process 11 exiting
-Process 11 (28156) started Process 12 (28157)
-Process 12 (28157) beginning
+Process 11 (71184) started Process 12 (71185)
+Process 12 (71185) beginning
 Process 12 creating Process 13
-Process 12 exiting
-Process 12 (28157) started Process 13 (28159)
-Process 13 (28159) beginning
+Process 12 (71185) started Process 13 (71187)
+Process 13 (71187) beginning
 Process 13 creating Process 14
-Process 13 exiting
-Process 13 (28159) started Process 14 (28160)
-Process 14 (28160) beginning
+Process 13 (71187) started Process 14 (71188)
+Process 14 (71188) beginning
 Process 14 creating Process 15
-Process 14 exiting
-Process 14 (28160) started Process 15 (28162)
-Process 15 (28162) beginning
+Process 14 (71188) started Process 15 (71189)
+Process 15 (71189) beginning
 Process 15 creating Process 16
-Process 15 exiting
-Process 15 (28162) started Process 16 (28163)
-Process 16 (28163) beginning
+Process 15 (71189) started Process 16 (71191)
+Process 16 (71191) beginning
 Process 16 creating Process 17
-Process 16 exiting
-Process 16 (28163) started Process 17 (28164)
-Process 17 (28164) beginning
+Process 16 (71191) started Process 17 (71193)
+Process 17 (71193) beginning
 Process 17 creating Process 18
-Process 17 exiting
-Process 17 (28164) started Process 18 (28166)
-Process 18 (28166) beginning
+Process 17 (71193) started Process 18 (71194)
+Process 18 (71194) beginning
 Process 18 creating Process 19
-Process 18 exiting
-Process 18 (28166) started Process 19 (28167)
-Process 19 (28167) beginning
+Process 18 (71194) started Process 19 (71195)
+Process 19 (71195) beginning
 Process 19 creating Process 20
-Process 19 exiting
-Process 19 (28167) started Process 20 (28169)
+Process 19 (71195) started Process 20 (71197)
+Process 20 (71197) exiting after sleeping for 3 second(s), the parent is 71195
+Process 19 (71195) exiting after sleeping for 3 second(s), the parent is 71194
+Process 18 (71194) exiting after sleeping for 6 second(s), the parent is 71193
+Process 17 (71193) exiting after sleeping for 4 second(s), the parent is 71191
+Process 16 (71191) exiting after sleeping for 4 second(s), the parent is 71189
+Process 15 (71189) exiting after sleeping for 8 second(s), the parent is 71188
+Process 14 (71188) exiting after sleeping for 4 second(s), the parent is 71187
+Process 13 (71187) exiting after sleeping for 2 second(s), the parent is 71185
+Process 12 (71185) exiting after sleeping for 4 second(s), the parent is 71184
+Process 11 (71184) exiting after sleeping for 8 second(s), the parent is 71182
+Process 10 (71182) exiting after sleeping for 6 second(s), the parent is 71181
+Process 9 (71181) exiting after sleeping for 1 second(s), the parent is 71179
+Process 8 (71179) exiting after sleeping for 7 second(s), the parent is 71178
+Process 7 (71178) exiting after sleeping for 6 second(s), the parent is 71177
+Process 6 (71177) exiting after sleeping for 2 second(s), the parent is 71175
+Process 5 (71175) exiting after sleeping for 1 second(s), the parent is 71164
+Process 4 (71164) exiting after sleeping for 6 second(s), the parent is 71162
+Process 3 (71162) exiting after sleeping for 4 second(s), the parent is 71161
+Process 2 (71161) exiting after sleeping for 7 second(s), the parent is 71160
+Process 1 (71160) exiting after sleeping for 4 second(s), the parent is 70500
