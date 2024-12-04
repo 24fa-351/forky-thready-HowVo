@@ -1,78 +1,72 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <sys/types.h>
+#include <sys/wait.h>
 #include <time.h>
 
-int main(int argc, char **argv)
+#include "forky.h"
+
+void process_routine(int process_number)
 {
-   unsigned int numOfProcess = atoi(argv[1]);
-   unsigned int patternNum = atoi(argv[2]);
-   pid_t childPid;
    srand(time(NULL));
+   int sleep_time = 1 + (rand() % 8);
+   printf("Process %d beginning\n", process_number);
+   sleep(sleep_time);
+}
 
-   if (patternNum == 1)
+void fork_pattern_one(int number_of_processes)
+{
+   pid_t pids[number_of_processes];
+
+   for (int ix = 0; ix < number_of_processes; ++ix)
    {
-      for (unsigned int i = 0; i < numOfProcess; i++)
+      pids[ix] = fork();
+
+      if (pids[ix] < 0)
       {
-         childPid = fork();
-         int sleepTime = rand() % 8 + 1;
-
-         if (childPid < 0)
-         {
-            perror("Fork failed");
-         }
-
-         else if (childPid == 0) // in child process
-         {
-            printf("Process %d (%d) beginning\n", i + 1, getpid());
-            sleep(sleepTime);
-            printf("Process %d (%d) exiting after sleeping for %d second(s), the parent is %d\n", i + 1, getpid(), sleepTime, getppid());
-            exit(0);
-         }
+         perror("Fork failed");
+         exit(EXIT_FAILURE);
       }
 
-      for (unsigned int i = 0; i < numOfProcess; i++)
+      if (pids[ix] == 0)
       {
-         wait(NULL);
+         process_routine(ix + 1);
+         printf("Process %d exiting\n", ix + 1);
+         exit(EXIT_SUCCESS);
       }
    }
 
-   else if (patternNum == 2)
+   for (int ix = 0; ix < number_of_processes; ix++)
    {
-      int sleepTime;
+      pid_t pid = waitpid(pids[ix], 0, 0);
+   }
+}
 
-      for (unsigned int i = 1; i <= numOfProcess - 1; i++)
+void fork_pattern_two(int number_of_processes)
+{
+   for (int ix = 0; ix < number_of_processes; ++ix)
+   {
+      pid_t pid = fork();
+
+      if (pid < 0)
       {
-         childPid = fork();
-         sleepTime = rand() % 8 + 1;
+         perror("Fork failed");
+         exit(EXIT_FAILURE);
+      }
 
-         if (childPid < 0)
+      if (pid == 0)
+      {
+         process_routine(ix + 1);
+         if (ix < number_of_processes - 1)
          {
-            perror("Fork failed");
-            exit(1);
-         }
-
-         else if (childPid > 0) // in parent process
-         {
-            printf("Process %d (%d) beginning\n", i, getpid());
-            printf("Process %d creating Process %d\n", i, i + 1);
-            wait(NULL);
-            printf("Process %d (%d) exiting after sleeping for %d second(s), the parent is %d\n", i, getpid(), sleepTime, getppid());
-            break;
-         }
-
-         else // in child process
-         {
-            sleep(sleepTime);
-            printf("Process %d (%d) started Process %d (%d)\n", i, getppid(), i + 1, getpid());
+            printf("Process %d creating process %d\n", ix + 1, ix + 2);
          }
       }
-      
-      if (childPid == 0)
+      else
       {
-         printf("Process %d (%d) exiting after sleeping for %d second(s), the parent is %d\n", numOfProcess, getpid(), sleepTime, getppid());
+         waitpid(pid, 0, 0);
+         printf("Process %d exiting\n", ix + 1);
+         break;
       }
    }
-   return 0;
 }
