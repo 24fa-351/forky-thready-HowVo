@@ -1,0 +1,43 @@
+./main 1 8 1
+Process 1 beginning
+Process 2 beginning
+Process 3 beginning
+Process 4 beginning
+Process 5 beginning
+Process 6 beginning
+Process 7 beginning
+Process 8 beginning
+Process 1 exiting
+Process 2 exiting
+Process 3 exiting
+Process 4 exiting
+Process 5 exiting
+Process 6 exiting
+Process 7 exiting
+Process 8 exiting
+
+
+./main 1 8 2
+Process 1 beginning
+Process 1 creating process 2
+Process 2 beginning
+Process 2 creating process 3
+Process 3 beginning
+Process 3 creating process 4
+Process 4 beginning
+Process 4 creating process 5
+Process 5 beginning
+Process 5 creating process 6
+Process 6 beginning
+Process 6 creating process 7
+Process 7 beginning
+Process 7 creating process 8
+Process 8 beginning
+Process 8 exiting
+Process 7 exiting
+Process 6 exiting
+Process 5 exiting
+Process 4 exiting
+Process 3 exiting
+Process 2 exiting
+Process 1 exiting
