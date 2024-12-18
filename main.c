@@ -1,18 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <time.h>
 
 #include "forky.h"
 
 int main(int argc, char *argv[])
 {
-    int min;
-    int max;
-    int pattern_number;
+    int min, max, pattern_number;
+
     sscanf(argv[1], "%d", &min);
     sscanf(argv[2], "%d", &max);
     sscanf(argv[3], "%d", &pattern_number);
 
+    srand(time(NULL));
 
     if (argc != 4)
     {
@@ -28,7 +29,7 @@ int main(int argc, char *argv[])
     }
     else if (pattern_number == 2)
     {
-        fork_pattern_two(number_of_processes);
+        fork_pattern_two(1, number_of_processes);
     }
     else
     {

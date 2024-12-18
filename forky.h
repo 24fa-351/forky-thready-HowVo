@@ -8,6 +8,6 @@
 #include <sys/wait.h>
 
 void fork_pattern_one(int number_of_processes);
-void fork_pattern_two(int number_of_processes);
+void fork_pattern_two(int current_process, int number_of_processes);
 
 #endif // FORKY_H
